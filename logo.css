@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  height: 100vw;
+  width: 100vh;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.instagram {
+  height: 150px;
+  width: 150px;
+  background: radial-gradient(
+    circle at 30% 105%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  border-radius: 25px;
+  display: grid;
+  place-items: center;
+}
+.insidebox {
+  width: 120px;
+  height: 120px;
+  border: 10px solid #fff;
+  border-radius: 32px;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.insidebox::before {
+  content: "";
+  width: 45px;
+  height: 45px;
+  border: 10px solid #ffff;
+  border-radius: 50%;
+  position: absolute;
+}
+.insidebox::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 2px solid #ffff;
+  border-radius: 50%;
+  background: #fff;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
